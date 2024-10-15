@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # MySQL configurations
-app.config['MYSQL_HOST'] = '10.0.2.67'  # Replace with your database host
+app.config['MYSQL_HOST'] = '10.0.2.89'  # Replace with your database host
 app.config['MYSQL_USER'] = 'todo_user'  # Replace with your database user
 app.config['MYSQL_PASSWORD'] = 'Muneeb@1122'  # Replace with your database password
 app.config['MYSQL_DB'] = 'todo_database'  # Use the newly created database
