@@ -15,6 +15,12 @@ app.config['MYSQL_DB'] = 'todo_database'  # Use the newly created database
 
 mysql = MySQL(app)
 
+# Health check route
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({'status': 'healthy'}), 200
+
+
 # Get all todos
 @app.route('/todos', methods=['GET'])
 def get_todos():
